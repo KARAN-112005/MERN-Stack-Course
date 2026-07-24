@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #fff;
+}
+
+/* ── NAVBAR ── */
+nav {
+  width: 100%;
+  padding: 18px 48px;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #222;
+  vertical-align: middle;
+}
+
+.nav-links {
+  display: inline-block;
+  margin-left: 120px;
+  vertical-align: middle;
+}
+
+.nav-links a {
+  display: inline-block;
+  margin-right: 28px;
+  text-decoration: none;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.nav-links a:hover {
+  color: #1a90d9;
+}
+
+.nav-user {
+  display: block;
+  float: right;
+  margin-top: 2px;
+  padding: 8px 22px;
+  border: 1.5px solid #1a90d9;
+  border-radius: 6px;
+  color: #1a90d9;
+  font-size: 0.9rem;
+}
+
+/* ── HERO ── */
+.hero {
+  width: 100%;
+  height: 100vh;
+  padding: 0 48px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* clearfix for the two side-by-side inline-block divs */
+.hero::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.hero-left {
+  display: inline-block;
+  width: 48%;
+  vertical-align: middle;
+  margin-top: 18vh;
+}
+
+.hero-right {
+  display: inline-block;
+  width: 48%;
+  vertical-align: middle;
+  margin-top: 10vh;
+  text-align: center;
+}
+
+.hero-left h1 {
+  font-size: 2.7rem;
+  font-weight: 800;
+  color: #1a1a2e;
+  line-height: 1.2;
+}
+
+.hero-left h1 span {
+  color: #1a90d9;
+}
+
+.hero-left p {
+  margin-top: 18px;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  max-width: 400px;
+}
+
+.btn-book {
+  display: inline-block;
+  margin-top: 32px;
+  padding: 14px 32px;
+  background: #1a90d9;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-book:hover {
+  background: #1278b8;
+}
+
+.hero-right img {
+  width: 82%;
+  max-width: 420px;
+}

@@ -1,0 +1,90 @@
+/* Element Selectors */
+body {
+    background-color: #f4703a;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h2 {
+    background-color: lime;
+    color: darkblue;
+}
+
+h4 {
+    font-size: 0.75em;
+    color: darkblue;
+}
+
+p {
+    color: white;
+}
+
+a {
+    color: purple;
+}
+
+li {
+    color: black;
+}
+.unordered-list li {
+    color: white;
+}
+
+/* Class Selectors */
+.head {
+    color: darkblue;
+    font-weight: bold;
+}
+
+/* ID Selectors */
+#bglime {
+    background-color: lime;
+}
+
+#para {
+    color: green;
+    font-style: italic;
+    font-size: 0.85em;
+}
+
+/* Inline-style equivalent via class for bold paragraph text */
+.bold-para {
+    font-weight: bold;
+    color: black;
+}
+
+.li1 {
+    color: blue;
+}
+/* Colored list items */
+.blue-li {
+    color: blue;
+}
+
+.red-li {
+    color: red;
+}
+
+/* h2 "head" word in red */
+h2 .red-word {
+    color: red;
+}
+
+/* Large text inside paragraph */
+.large-text {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: black;
+}
+
+/* Unordered list styling */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Ordered list styling */
+ol {
+    padding-left: 20px;
+    font-size: 0.85em;
+}
