@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Records</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top header bar -->
+  <header class="topbar">
+    <h1>Hi, Username</h1>
+    <button class="login-btn">Login</button>
+  </header>
+
+  <main class="container">
+
+    <!-- Search box -->
+    <div class="search-wrap">
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search Student">
+        <span class="search-icon">&#128269;</span>
+      </div>
+      <button class="search-btn" id="searchBtn">Search</button>
+    </div>
+
+    <!-- Heading that appears only while searching -->
+    <h2 id="resultsHeading" class="results-heading"></h2>
+
+    <!-- Student cards get inserted here by JavaScript -->
+    <div class="card-grid" id="cardGrid"></div>
+
+    <!-- Shown when a search has no matches -->
+    <p id="noResults" class="no-results"></p>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

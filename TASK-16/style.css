@@ -1,0 +1,158 @@
+/* ---------- Basic reset ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* ---------- Top header bar ---------- */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 1px solid #eee;
+}
+
+.topbar h1 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.login-btn {
+  background-color: #eaf0ff;
+  color: #3b5bdb;
+  border: none;
+  padding: 8px 22px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: #dbe4ff;
+}
+
+/* ---------- Page container ---------- */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 40px 60px;
+}
+
+/* ---------- Search bar ---------- */
+.search-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 25px;
+}
+
+.search-box {
+  flex: 1;
+  position: relative;
+}
+
+.search-box input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px 40px 10px 14px;
+  font-size: 14px;
+  background-color: #f5f5f7;
+  border-radius: 8px;
+}
+
+.search-icon {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 14px;
+}
+
+.search-btn {
+  background-color: #6d28d9;
+  color: #fff;
+  border: none;
+  padding: 12px 26px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background-color: #5b21b6;
+}
+
+/* ---------- Results heading (shown only while searching) ---------- */
+.results-heading {
+  font-size: 18px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 16px;
+  min-height: 24px;
+}
+
+/* ---------- Card grid ---------- */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 800px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+  .search-wrap {
+    flex-direction: column;
+  }
+  .search-btn {
+    width: 100%;
+  }
+}
+
+/* ---------- Student card ---------- */
+.student-card {
+  background-color: #f4f4f6;
+  border-radius: 10px;
+  padding: 18px 20px;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.student-card p {
+  color: #555;
+}
+
+.student-card p span {
+  font-weight: 600;
+  color: #222;
+}
+
+/* ---------- No results message ---------- */
+.no-results {
+  color: #888;
+  font-size: 14px;
+  margin-top: 10px;
+}
