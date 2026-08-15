@@ -107,6 +107,7 @@ a {
     margin-top:110px;
     animation: floating 2s ease-in infinite;
     object-fit: cover;
+    width:500px;
 }
 
 .left {
