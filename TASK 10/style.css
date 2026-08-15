@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" , Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    width:100vw;
+    background-color: white;
+}
+
+.header {
+    height: 8vh;
+    width: 100vw;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 600;
+    color: #37495A;
+    margin-left: 80px;
+    float: left;
+}
+
+
+a {
+    font-size: 17px;
+    color: #8A949E;
+    text-decoration: none;
+}
+
+.aMargin {
+    margin-left: 50px;
+}
+
+.btn {
+    background-color: #e6f5ff;
+    color: #2196f3;
+    border: none;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 10px 20px;
+    height: 6vh;
+    margin-right: 80px;
+}
+
+.menu {
+    display: none;
+}
+
+.hamburgerMenu {
+    border: none;
+    position: relative;
+    background: transparent;
+    font-size: 25px;
+    cursor: pointer;
+    z-index: 1;
+    color: #34495e;
+    margin-right: 20px;
+}
+
+.mobile-nav {
+    display: none;
+    border: none;
+    height: 100vh;
+    width: 280px;
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.menu a {
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.heroSec {
+    height: 92vh;
+    width: 100vw;
+    display: flex;
+    background-color: #FAFAFA;
+}
+
+.right {
+    height: 92vh;
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.Image {
+    margin-top:110px;
+    animation: floating 2s ease-in infinite;
+    object-fit: cover;
+}
+
+.left {
+    height: 92vh;
+    width: 50vw;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
+.heading {
+    font-size: 60px;
+    width: 37vw;
+    line-height: 80px;
+    color: #455A64;
+    align-self: center;
+}
+
+.disc {
+    font-size: large;
+    width: 31vw;
+    color: #9EADB5;
+    margin: 0px 0px 40px 98px;
+}
+
+.btn2 {
+    height: 50px;
+    width: 180px;
+    border-radius: 15px;
+    border: none;
+    background-color: #29AEF5;
+    margin-left: 100px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+@keyframes floating {
+    0%, 100%{
+        transform: translate(-20px, -20px);
+    }
+
+    10% {
+        transform: translate(20px, 0px);
+    }
+
+    15% {
+        transform: translate(20px, 20px);
+    }
+
+    30%, 40% {
+        transform: translate(0px, 20px);
+    }
+
+    60% {
+        transform: scaleX(1.1);
+    }
+
+    80% {
+        transform: scaleY(1.1);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width : 770px) and (max-height: 1024px){
+
+    .header {
+        height: 10vh;
+    }
+
+    .logo {
+        font-size: 18px;
+        margin-left: 40px;
+        width: 60px;
+    }
+
+    a {
+        font-size: 15px;
+    }
+
+    .aMargin {
+        margin-left: 40px;
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 8px 16px;
+        margin-right: 40px;
+    }
+
+    .heroSec {
+        height: 90vh;
+        width: 100vw;
+    }
+
+    .right {
+        height: 90vh;
+        /* display: flex; */
+    }
+
+    .Image {
+        height: 350px;
+        margin-top:250px;
+        margin-bottom: 350px;
+    }
+
+    .left {
+        height: 90vh;
+    }
+    .heading {
+        font-size: 35px;
+        width: 45vw;
+        line-height: 60px;
+    }
+
+    .disc {
+        font-size: 22px;
+        width: 45vw;
+        margin-left: 18px;
+        line-height: 33px;
+    }
+
+    .btn2 {
+        height: 60px;
+        width: 250px;
+        margin-left: 18px;
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width : 376px) and (max-height: 751px){
+
+    .header {
+        height: 8vh;
+        position: relative;
+    }
+
+    .logo {
+        font-size: 15px;
+        margin: 0px 20px;
+        width: 50px;
+    }
+
+    a {
+        display: none;
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 8px 10px;
+        height: 5.5vh;
+        margin-left: 100px;
+        margin-right: 0px;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .hamburgerMenu {
+        display: block;
+    }
+
+
+    .hamburgerMenu:focus + .mobile-nav{
+        display: flex;
+    }
+
+    .mobile-nav a {
+        display: block;
+    }
+
+    .heroSec {
+        height: 92vh;
+        flex-direction: column;
+    }
+
+    .right {
+        height: 46vh;
+        width: 100vw;
+        display: flex;
+    }
+
+    .Image {
+        height: 300px;
+        width: 90vw;
+        margin: 0;
+    }
+
+    .left {
+        height: 46vh;
+        width: 100vw;
+    }
+
+    .heading {
+        font-size: 35px;
+        width: 90vw;
+        line-height: 40px;
+    }
+
+    .disc {
+        font-size: 15px;
+        width: 90vw;
+        margin-bottom: 20px;
+        line-height: 20px;
+    }
+
+    .btn2 {
+        height: 60px;
+        width: 250px;
+        font-size: 15px;
+    }
+
+}
