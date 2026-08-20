@@ -10,6 +10,7 @@
       "Courier New", monospace;
     --color-amber-200: oklch(92.4% 0.12 95.746);
     --color-amber-500: oklch(76.9% 0.188 70.08);
+    --spacing: 0.25rem;
     --container-3xs: 16rem;
     --container-2xs: 18rem;
     --container-3xl: 48rem;
@@ -201,6 +202,12 @@
   }
   .columns-12 {
     columns: 12;
+  }
+  .gap-0 {
+    gap: 0px;
+  }
+  .gap-25 {
+    gap: calc(var(--spacing) * 25);
   }
   .border {
     border-style: var(--tw-border-style);
