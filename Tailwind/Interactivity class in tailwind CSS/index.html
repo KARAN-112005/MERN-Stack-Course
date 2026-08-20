@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactivity class in tailwind CSS</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <button class="bg-blue-400 p-2 m-2 rounded-md text-white block">
+        Simple Button
+    </button>
+
+    <button class="bg-blue-400 p-2 m-2 rounded-md text-white block hover:bg-blue-700 hover:text-yellow-400">
+        Hover Button
+    </button>
+
+    <button class="bg-blue-400 p-2 m-2 rounded-md text-white block focus:bg-yellow-400">
+        Focus Button
+    </button>
+
+    <button class="bg-blue-400 p-2 m-2 rounded-md text-white block active:bg-green-400">
+        Active Button
+    </button>
+
+     <button class="bg-blue-400 p-2 m-2 rounded-md text-white block focus:bg-yellow-400 hover:text-yellow-400 active:bg-green-400">
+        Simple Button
+    </button>
+
+    <div>
+        <!-- <a  class="hover:text-green-500" href="#"> Click Me!</a> -->
+        <a class="group" href="#"> Lorem ipsum dolor sit amet consectetur adipisi.
+            <h2  class="group-hover:text-red-600">Lorem ipsum dolor sit amet.</h2>
+            <p class="group-hover:text-green-600">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Accusantium, id. Voluptates, id!
+            </p>
+        </a>
+    </div>
+</body>
+</html>
