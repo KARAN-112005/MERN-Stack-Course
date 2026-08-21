@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Payment Page - Thala7.">
+    <link rel="stylesheet" href="style.css">
+    <title>Payment Page</title>
+</head>
+<body>
+    <main class="landing-page">
+
+        <div class="payment-page">
+
+            <div class="payment-details-left">
+                <div class="check-out">
+                    <h4>Checkout</h4>
+                </div>
+
+                <div class="contact-detail-heading">
+                    <h2>Contact Details</h2>
+                </div>
+
+                <div class="user-detail">
+                    <label for="user-email">Email ID</label>
+                    <input type="text" placeholder="abcd@gmail.com" id="user-email">
+                </div>
+
+                <div class="payment-detail-heading">
+                    <h2>Payment</h2>
+                </div>
+                
+                <div class="payment-card">
+
+                    <div class="payment-type">
+                        <div class="pay-type card-pay">
+                            <img src="images/payment-icon/credit-card.png" alt="Card Icon">
+                            <h4>Card</h4>
+                        </div>
+
+                        <div class="pay-type">
+                            <img src="images/payment-icon/bitcoin.png" alt="Crypto Icon">
+                            <h4>Crypto</h4>
+                        </div>
+
+                        <div class="pay-type">
+                            <img src="images/payment-icon/bank.png" alt="Card Icon">
+                            <h4>Bank</h4>
+                        </div>
+
+                        <div class="more">
+                            <span>&#8942;</span>
+                        </div>
+                    </div>
+
+                    <div class="payment-details">
+                        <div class="payment-info card-info">
+                            <label for="card-det">Card Number</label>
+                            <input type="number" placeholder="1234 5678 9123" id="card-det">
+                        </div>
+                        <div class="payment-info">
+                            <label for="expiry-det">Expiry</label>
+                            <input type="text" placeholder="MM/YY" id="expiry-det">
+                        </div>
+                        <div class="payment-info">
+                            <label for="cvv-det">CVV</label>
+                            <input type="number" placeholder="***" id="cvv-det">
+                        </div>
+                        <div class="payment-info">
+                            <label for="country-det">Country</label>
+                            <input type="text" placeholder="INDIA" id="country-det">
+                        </div>
+                        <div class="payment-info">
+                            <label for="zip-det">ZIP</label>
+                            <input type="number" placeholder="XXXXX" id="zip-det">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="back-to-cart">
+                    <a href="cart.html"><h4><span>‹</span> Go Back To Cart</h4></a>
+                </div>
+
+            </div>
+
+            <div class="order-summary-right">
+                <div class="order-summary-heading">
+                    <h2>Order Summary</h2>
+                </div>
+
+                <div class="descriptive-card">
+
+                    <div>
+
+                        <label for="coupon-box" >Enter Coupon Code</label>
+                        <div class="coupon-box">
+                            <input type="text" placeholder="COUPON CODE" id="coupon-box">
+                            <button class="coupon-btn">Apply Coupon</button>
+                        </div>
+
+                    </div>
+
+                    <div class="bill">
+                        <div class="total-info">
+                            <p>Sub Total</p> <p>₹4,700</p>
+                        </div>
+                        <div class="total-info">
+                            <p>Taxes(if applicable)</p> <p>₹199</p>
+                        </div>
+                        <div class="total-info">
+                            <p>Discount</p> <p>₹0</p>
+                        </div>
+                        <div class="total">
+                            <h2>Total</h2> <h2>₹4,999</h2>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                
+                <button class="pay-now-btn" onclick="window.location.href='payment.html'">Pay Now ₹4,999</button>
+
+                <div class="payment-icon-img">
+                    <div>
+                        <img src="images/payment-icon/secure-icon.png" alt="secure-Icon" class="payment-icon">
+                    </div>
+                    <div>
+                        <img src="images/payment-icon/payment-platform-icon.png" alt="Payment-Platform-Icon" class="payment-platform-icon">
+                    </div>
+                    <div>
+                        <img src="images/payment-icon/authentication-icon.png" alt="Authentication-Icon" class="payment-icon">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+</body>
+</html>

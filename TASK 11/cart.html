@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shopping Cart - Cart Product Details">
+    <link rel="stylesheet" href="style.css">
+    <title>Shopping Cart Page</title>
+</head>
+<body>
+    <main class="landing-page">
+
+        <header class="navbar">
+            <div class="logo">
+                <h1>Thala<span>7.</span></h1>
+            </div>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="#">About</a>
+                
+                <div class="dropdown">
+                    <select name="brands" id="brands-dropdown">
+                        <option name="brands" id="brands-dropdown"><a href="#">Brands</a></option>
+                    </select>
+                    
+                    <select name="more" id="more-dropdown">
+                        <option name="more" id="more-dropdown"><a href="#">More</a></option>
+                    </select>
+                    
+                </div>
+
+                <a href="#">Contact</a>
+            </div>
+
+            <div class="nav-right">
+
+                <div class="search-box">
+                    <img src="images/search-interface-symbol.png" alt="search-icon">
+                    <input class="Search" type="text" placeholder="Search">
+                </div>
+
+                <button onclick="window.location.href='cart.html'" class="cart">
+                    <img src="images/bag.png" alt="cart-icon">
+                    <span>0</span>
+                </button>
+
+                <div class="profile">
+                    <button><img src="images/profile-pic.jpg" alt="Profile"></button>
+                </div>
+
+            </div>
+
+        </header>
+
+        <div class="shopping-cart-heading">
+            <h1>Shopping Cart</h1>
+        </div>
+
+        <section class="cart-main-section">
+            <div class="cart-des-left">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Product</td>
+                            <td>Quantity</td>
+                            <td>Price</td>
+                            <td></td>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Seven By M.S Dhoni W...</td>
+                            <td>- 1 +</td>
+                            <td>₹4,999</td>
+                            <td><img src="images/remove-icon.png"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Seven By M.S Dhoni W...</td>
+                            <td>- 1 +</td>
+                            <td>₹4,999</td>
+                            <td><img src="images/remove-icon.png"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Seven By M.S Dhoni W...</td>
+                            <td>- 1 +</td>
+                            <td>₹4,999</td>
+                            <td><img src="images/remove-icon.png"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div class="cart-bill-right">
+
+                <div class="descriptive-card">
+
+                    <div>
+
+                        <label for="coupon-box" >Enter Coupon Code</label>
+                        <div class="coupon-box">
+                            <input type="text" placeholder="COUPON CODE" id="coupon-box">
+                            <button class="coupon-btn">Apply Coupon</button>
+                        </div>
+
+                    </div>
+
+                    <div class="bill">
+                        <div class="total-info">
+                            <p>Sub Total</p> <p>₹4,700</p>
+                        </div>
+                        <div class="total-info">
+                            <p>Taxes(if applicable)</p> <p>₹199</p>
+                        </div>
+                        <div class="total-info">
+                            <p>Discount</p> <p>₹0</p>
+                        </div>
+                        <div class="total">
+                            <h2>Total</h2> <h2>₹4,999</h2>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                
+                <button class="pay-now-btn" onclick="window.location.href='payment.html'">Pay Now ₹4,999</button>
+
+                <div class="payment-icon-img">
+                    <div>
+                        <img src="images/payment-icon/secure-icon.png" alt="secure-Icon" class="payment-icon">
+                    </div>
+                    <div>
+                        <img src="images/payment-icon/payment-platform-icon.png" alt="Payment-Platform-Icon" class="payment-platform-icon">
+                    </div>
+                    <div>
+                        <img src="images/payment-icon/authentication-icon.png" alt="Authentication-Icon" class="payment-icon">
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer>
+            <div class="back-to-shopping">
+                <a href="product.html"><h4><span>‹</span> Continue Shopping</h4></a>
+            </div>
+        </footer>
+
+    </main>
+</body>
+</html>
